@@ -1,0 +1,43 @@
+Arguments: 
+  /home/olimpio/.nvm/versions/node/v12.18.2/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /home/olimpio/.nvm/versions/node/v12.18.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.18.2
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EACCES: permission denied, mkdir '/home/olimpio/Documentos/UdemyCursos/ReactJS/redux--01-start/node_modules/aria-query/node_modules'
+
+npm manifest: 
+  {
+    "name": "react-complete-guide",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "react": "^16.0.0",
+      "react-dom": "^16.0.0",
+      "react-redux": "^7.2.0",
+      "react-scripts": "1.0.13",
+      "redux": "^4.0.5"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test --env=jsdom",
+      "eject": "react-scripts eject"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
