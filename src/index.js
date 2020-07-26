@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createStore, combineReducers, applyMiddleware } from 'redux';
+import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 
 import counterReducer from './store/reduces/counter';
 import resultsReducer from './store/reduces/result';
@@ -25,7 +25,10 @@ const logger = store => {
     }
 }
 
-const store = createStore(rootReducer, applyMiddleware(logger));
+// constante para o configurar o reduxDevTools no crome
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+const store = createStore(rootReducer, composeEnhancers(applyMiddleware(logger)));
 
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 registerServiceWorker();
