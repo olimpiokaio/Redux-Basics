@@ -26,7 +26,7 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 results: updateArray
             }
-    }
+    }  
     return state;
 }
 
